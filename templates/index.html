@@ -1,0 +1,11 @@
+{% includeCssFile siteUrl ~ "assets/css/site.css" %}
+<html>
+<head>
+</head>
+{% set backgroundImage = entry.homeHeroImage.one() %}
+<body>
+<div class="hero" style="background-image: url('{{ backgroundImage.getUrl }}')">
+  <h1>hello world!</h1>
+</div>
+</body>
+</html>
