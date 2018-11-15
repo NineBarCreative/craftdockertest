@@ -1,11 +1,11 @@
-{% includeCssFile siteUrl ~ "assets/css/site.css" %}
+{% includeCssFile siteUrl ~ "assets/css/main.css" %}
 <html>
 <head>
 </head>
 {% set backgroundImage = entry.homeHeroImage.one() %}
-<body>
-<div class="hero" style="background-image: url('{{ backgroundImage.getUrl }}')">
-  <h1>hello world!</h1>
+<body class="p-0 m-0">
+<div class="hero bg-cover w-screen h-screen flex flex-col items-center justify-center text-white text-xl " style="background-image: url('{{ backgroundImage.getUrl }}')">
+  <h1>{{ entry.homeHeader }}</h1>
 </div>
 </body>
 </html>
